@@ -1,0 +1,37 @@
+body {
+  position: relative;
+  background-color: black;
+  color: #9f55ff;
+  color: white;
+}
+
+.About {
+  height: 100vh;
+}
+
+.projectsCard {
+    width: 300px;
+    height: 200px;
+    border-radius: 1rem;
+    opacity: 0.5;
+    
+  }
+
+.navcontainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  gap: 5rem; 
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+  
