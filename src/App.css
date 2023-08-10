@@ -1,0 +1,99 @@
+body {
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 5%;
+}
+
+.headerIcons {
+  padding: 5%;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Navbar */
+
+.navbar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* projects cards */
+
+.projects {
+  display: flex;
+  gap: 3rem;
+  overflow: auto;
+}
+
+
+/* contact-form */
+
+.form {
+  padding: 2rem 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-field{
+  position: relative;
+}
+
+.input {
+  position: relative;
+  padding-left: 1em;
+  width: 100%;
+  height: 3em;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 2px solid #9f55ff;
+  outline: none;
+  z-index: 1;
+
+}
+
+.input-label {
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.submitButton {
+  
+  height: 2.5rem;
+  width: 90%;
+  color: white;
+  background-color: black;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.input:focus ~ .input-label,
+ input:valid ~ .input-label{
+  transform: translateY(-2em);
+  transition: all 0.5s;
+  left: 0.25em;
+  
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateY(-2rem);
+}
+
+
+
