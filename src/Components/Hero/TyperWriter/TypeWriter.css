@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@300;600&display=swap');
+
+.typewriter-container {
+    display: flex;
+    align-items: center;
+}
+
+.typewriter-text {
+    font-size: max(2.5vw, 2rem);
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0.5;
+    font-family: 'JetBrains Mono';
+}
+
+.typewriter-cursor {
+    display: inline-block;
+    width: 0.1em;
+    height: 1em;
+    background-color: transparent;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.typewriter-cursor.visible {
+    background-color: orange;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: auto;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: white;
+    }
+}
