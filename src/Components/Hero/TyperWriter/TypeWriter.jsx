@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import  { useState, useEffect } from 'react';
-import './Typewriter.css'; // Add your styles here
+import './TypeWriter.css'; // Add your styles here
 
 export default function Typewriter({ texts, typingDelay = 100, delayAfterTyping = 2000 }) {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
